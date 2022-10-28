@@ -1,9 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default {
   target: "static",
-  router: {
-    base: "/basics-with-amit/",
-  },
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
   content: {
     markdown: {
