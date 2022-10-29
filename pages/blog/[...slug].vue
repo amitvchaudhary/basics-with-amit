@@ -1,10 +1,10 @@
 <template>
-	<div>
-		<main>
-			<article
-				class="lg:pt-20 pt-10 relative flex items-start lg:space-x-10 px-[5%] lg:px-[15%]"
-			>
-				<!-- <div
+  <div>
+    <main>
+      <article
+        class="lg:pt-20 pt-10 relative flex items-start lg:space-x-10 px-[5%] lg:px-[15%]"
+      >
+        <!-- <div
 					v-if="post?.body?.toc?.links?.length > 0"
 					class="w-[300px] p-5 sticky top-3 border rounded-md bg-white hidden lg:block"
 				>
@@ -25,27 +25,33 @@
 						</template>
 					</ul>
 				</div> -->
-				<ContentDoc v-slot="{ doc }">
-					<ContentRenderer
-						class="prose  prose-lg prose-slate pr-7 max-w-none"
-						:value="doc"
-					>
-						<template #empty>
-							<p>No content found.</p>
-						</template>
-					</ContentRenderer>
-				</ContentDoc>
-			</article>
-		</main>
-	</div>
+        <ContentDoc>
+          <template v-slot="{ doc }">
+            <ContentRenderer
+              class="prose prose-xl prose-slate pr-7 max-w-none post-link post-subtitle"
+              :value="doc"
+            >
+            </ContentRenderer>
+          </template>
+
+          <template #not-found>
+            <Redirect />
+          </template>
+        </ContentDoc>
+      </article>
+    </main>
+    <AboutMe />
+  </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped>
-	.post-link {
-		@apply prose-a:text-primary  before:prose-headings:mr-1 before:prose-headings:text-primary before:prose-h1:content-[''];
-	}
+.post-link {
+  @apply prose-a:border-b-4 prose-a:border-b-primary prose-a:no-underline;
+}
+
+.post-subtitle {
+  @apply prose-a:prose-headings:no-underline prose-a:prose-headings:border-b-0 prose-a:prose-headings:text-black prose-a:prose-headings:bg-white;
+}
 </style>

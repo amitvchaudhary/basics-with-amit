@@ -1,23 +1,20 @@
 <template>
-	<div class="h-full">
-		<main>
-			<HomeIntroduction />
-			<BlogRecentPosts />
-		</main>
-	</div>
+  <div class="h-full">
+    <main>
+      <HomeIntroduction />
+      <BlogRecentPosts />
+      <AboutMe />
+    </main>
+  </div>
 </template>
 
 <script setup>
 const { data: blogNav } = await useAsyncData("navigation", () => {
-	return fetchContentNavigation(queryContent("blog"));
+  return fetchContentNavigation(queryContent("blog"));
 });
 
-const somePosts = queryContent('/blog').find();
-console.log(somePosts);
-
-console.log('blog nav===');
-console.log(blogNav);
+const somePosts = queryContent("/blog").find();
 useHead({
-	title: "basicsWithAmit",
+  title: "basicsWithAmit",
 });
 </script>

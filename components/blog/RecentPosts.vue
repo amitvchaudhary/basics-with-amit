@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:px-[15%] px-[5%] lg:pt-20 pt-14">
+  <section class="lg:px-[15%] px-[5%] lg:pt-20 pt-14 pb-10">
     <div>
       <ContentList path="/blog" v-slot="{ list }" :query="postsQueryParams">
         <BlogPosts :posts="list" />
