@@ -5,7 +5,7 @@
     </h1>
     <div class="max-w-xl flex">
       <span>Img</span>
-      <span class="text-white"
+      <span class="text-white text-sm sm:text-lg"
         >My name is <span class="font-bold">Amit Chaudhary</span> and I am just
         a developer like you with <span class="font-extrabold">8+</span> years
         of experience in writing code and I love to simplify complex concepts.
