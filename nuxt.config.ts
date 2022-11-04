@@ -2,6 +2,7 @@
 export default {
   target: "static",
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
+  // plugins: [{ src: "@/plugins/vue-gtag", mode: "client" }],
   content: {
     documentDriven: true,
     markdown: {
@@ -10,7 +11,10 @@ export default {
         searchDepth: 3,
       },
     },
+
     highlight: {
+      anchorLinks: false,
+      preload: ["elixir"],
       theme: "dracula-soft",
     },
   },
