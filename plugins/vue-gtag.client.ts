@@ -1,6 +1,13 @@
-import Vue from "vue";
 import VueGtag from "vue-gtag";
 
-Vue.use(VueGtag, {
-  config: { id: "G-TNSYQ1QLMJ" },
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.use(
+    VueGtag,
+    {
+      config: {
+        id: "G-TNSYQ1QLMJ",
+      },
+    },
+    nuxtApp.$router
+  );
 });
