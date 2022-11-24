@@ -14,7 +14,7 @@ export default {
 
     highlight: {
       anchorLinks: false,
-      preload: ["elixir"],
+      preload: ["elixir", "xml"],
       theme: "dracula-soft",
     },
   },

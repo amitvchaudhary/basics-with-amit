@@ -1,10 +1,10 @@
 <template>
   <div
+    v-if="posts && posts.length"
     class="flex flex-col items-center justify-center bg-slate-50 border-slate-200"
   >
     <div class="rainbow-text text-2xl mt-10">You may also like ...</div>
     <div
-      v-if="posts"
       class="grid grid-cols-1 py-10 px-0 sm:grid-cols-3 sm:px-10 gap-x-2 lg:gap-x-6 gap-y-2 lg:gap-y-0"
     >
       <NuxtLink
