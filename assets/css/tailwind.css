@@ -21,3 +21,10 @@
   opacity: 0;
   transform: scale(0.99);
 }
+
+/* .prose :where(code):not(:where([class~="not-prose"] *))::before {
+  content: "";
+}
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
+  content: "";
+} */

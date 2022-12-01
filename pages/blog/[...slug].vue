@@ -2,12 +2,12 @@
   <div>
     <main>
       <article
-        class="lg:pt-20 pt-10 relative flex items-start lg:space-x-10 px-[5%] lg:px-[15%]"
+        class="lg:pt-20 pt-10"
       >
         <ContentDoc>
           <template v-slot="{ doc }">
             <ContentRenderer
-              class="prose prose-xl prose-code:w-96 prose-code:overflow-x-auto prose-slate max-w-none post-link post-subtitle"
+              class="prose prose-xl px-[5%] lg:px-[15%] prose-slate max-w-none post-link post-subtitle"
               :value="doc"
             >
             </ContentRenderer>
