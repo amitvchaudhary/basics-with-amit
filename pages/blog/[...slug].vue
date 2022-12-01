@@ -7,7 +7,7 @@
         <ContentDoc>
           <template v-slot="{ doc }">
             <ContentRenderer
-              class="prose prose-xl prose-slate max-w-none post-link post-subtitle"
+              class="prose prose-xl prose-code:w-96 prose-code:overflow-x-auto prose-slate max-w-none post-link post-subtitle"
               :value="doc"
             >
             </ContentRenderer>
