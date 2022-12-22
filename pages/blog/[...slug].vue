@@ -1,9 +1,7 @@
 <template>
   <div>
     <main>
-      <article
-        class="lg:pt-20 pt-10"
-      >
+      <article class="pt-10 lg:pt-20">
         <ContentDoc>
           <template v-slot="{ doc }">
             <ContentRenderer
