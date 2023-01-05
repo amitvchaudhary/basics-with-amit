@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 border-2 border-pink-500 rounded-md bg-pink-50">
+  <div class="p-6 border border-pink-500 rounded-md">
     <div class="flex font-semibold text-pink-700">Related Posts</div>
     <div class="post-link">
       <slot />
