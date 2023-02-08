@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="posts && posts.length > 3"
+    v-if="posts && posts.length > 2"
     class="flex flex-col items-center justify-center bg-slate-50 border-slate-200"
   >
     <div class="mt-10 text-2xl rainbow-text">You may also like ...</div>
