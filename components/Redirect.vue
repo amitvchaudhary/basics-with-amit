@@ -8,3 +8,6 @@ const router = useRouter();
 
 router.replace(to);
 </script>
+<template>
+  <div></div>
+</template>
