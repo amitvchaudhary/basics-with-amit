@@ -5,7 +5,7 @@
   >
     <div class="mt-10 text-2xl rainbow-text">You may also like ...</div>
     <div
-      class="grid grid-cols-1 px-0 py-10 sm:grid-cols-3 sm:px-10 gap-x-2 lg:gap-x-6 gap-y-2 lg:gap-y-0"
+      class="w-full max-w-5xl grid grid-cols-1 px-5 py-10 sm:grid-cols-3 sm:px-10 gap-x-2 lg:gap-x-6 gap-y-2 lg:gap-y-0"
     >
       <NuxtLink
         v-for="post in posts"
